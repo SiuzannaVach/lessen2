@@ -122,3 +122,74 @@ body {
 .button.button-white:hover {
   background: rgb(241 241 241);
 }
+.main-field {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  gap: 10px;
+  border: 1px solid #1111111a;
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 10px 12px;
+  position: relative;
+  box-sizing: border-box;
+  height: 50px;
+}
+
+.main-field.textarea {
+  height: auto;
+}
+
+.main-pin {
+  width: 28px;
+  height: 28px;
+  border-radius: 10px;
+  background: rgba(17, 17, 17, 0.08);
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.main-pin::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: orange;
+  opacity: 0.75;
+  display: block;
+}
+
+.main-field:last-child .main-pin::before {
+  background: green;
+  opacity: 0.85;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #111111;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 72px;
+  padding: 2px 0;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #7c7c7c;
+}
+
+.main-field:focus-within {
+  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 4px rgba(255, 204, 0, 0.35);
+  background: rgba(255, 255, 255, 0.75);
+}
