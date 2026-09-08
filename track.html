@@ -21,7 +21,9 @@
           <div class="header-title">Dostaffkin</div>
         </a>
         <nav class="header-menu">
-          <a class="header-link" href="./order.html">Оформить <span>доставку</span></a>
+          <a class="header-link" href="./order.html"
+            >Оформить <span>доставку</span></a
+          >
           <a class="header-link" href="#">Отследить <span>посылку</span></a>
         </nav>
       </header>
@@ -117,58 +119,12 @@
           </div>
           <div class="track-info">
             <div class="track-status-title">Статус данной посылки:</div>
-            <div class="track-status-list" id="trackStatusList">
-              <div class="track-status created">
-                <img
-                  src="images/icons/created.svg"
-                  class="track-status-icon"
-                  alt="Created"
-                />
-                <div class="track-status-text">
-                  <div class="track-status-text-state">Создан</div>
-                  <div class="track-status-text-date">10.01.2026</div>
-                </div>
-              </div>
-
-              <div class="track-status in-way">
-                <img
-                  src="images/icons/in-way.svg"
-                  class="track-status-icon"
-                  alt="In way"
-                />
-                <div class="track-status-text">
-                  <div class="track-status-text-state">В пути: Москва</div>
-                  <div class="track-status-text-date">18.01.2026</div>
-                </div>
-              </div>
-
-              <div class="track-status ready">
-                <img
-                  src="images/icons/ready.svg"
-                  class="track-status-icon"
-                  alt="Ready"
-                />
-                <div class="track-status-text">
-                  <div class="track-status-text-state">Готов к выдаче</div>
-                  <div class="track-status-text-date">25.01.2026</div>
-                </div>
-              </div>
-
-              <div class="track-status done">
-                <img
-                  src="images/icons/done.svg"
-                  class="track-status-icon"
-                  alt="Done"
-                />
-                <div class="track-status-text">
-                  <div class="track-status-text-state">Вручен</div>
-                  <div class="track-status-text-date">27.01.2026</div>
-                </div>
-              </div>
-            </div>
+            <div class="track-status-list" id="trackStatusList"></div>
           </div>
         </section>
       </main>
     </div>
+
+    <script src="scripts/track.js"></script>
   </body>
 </html>
